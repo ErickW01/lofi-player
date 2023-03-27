@@ -1,25 +1,30 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
+.App {
+  height: 100vh;
+}
 
 .dark-mode {
-    background-color: #151617;
-    h1, h2, h3, h4 {
-        color: rgb(240, 240, 240);
-    }
-    button {
-        color: rgb(255, 255, 255);
-    }
-    .player {
-        color: white;
-    }
-    .library {
-        background: rgb(2, 79, 131)
-    }
+  background-color: #151617;
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: rgb(240, 240, 240);
+  }
+  button {
+    color: rgb(255, 255, 255);
+  }
+  .player {
+    color: white;
+  }
+  .library {
+    background: rgb(2, 79, 131);
+  }
 }
 
 @import "./player";

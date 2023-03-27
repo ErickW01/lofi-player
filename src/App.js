@@ -33,7 +33,7 @@ function App() {
   }
 
   return (
-    <div className={`App ${lightStatus && "dark-mode"}`}>
+    <div className={`App ${lightStatus ? "dark-mode" : 'light-mode'}`}>
       <Nav 
       libraryStatus={libraryStatus} 
       setLibraryStatus={setLibraryStatus}

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faPlay, faAngleLeft, faAngleRight, faPause} from '@fortawesome/free-solid-svg-icons'
+import {BsPlayFill, BsFillPauseFill } from 'react-icons/bs';
+import {TfiAngleLeft, TfiAngleRight} from 'react-icons/tfi'
 
 const Player = ({
     audioRef,
@@ -47,10 +47,11 @@ const Player = ({
                 <h3>{getTime(songInfo.duration)}</h3>
             </div>
             <div className='play-control'>
-                <FontAwesomeIcon className="skip-back" size="2x" icon={faAngleLeft}/>
-                <FontAwesomeIcon onClick={playSongHandler} className="play" size="2x" icon={isPlaying ? faPlay: faPause}/>
-                <FontAwesomeIcon className="skip-forward" size="2x" icon={faAngleRight}/>
-
+                 <TfiAngleLeft/>
+                <div onClick={playSongHandler}>
+                    {isPlaying ? <BsPlayFill/>: <BsFillPauseFill/>}
+                </div>
+                <TfiAngleRight/>
             </div>
         </div>
     )

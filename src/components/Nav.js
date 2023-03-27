@@ -1,6 +1,5 @@
 import React from 'react'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faMusic, faMoon} from "@fortawesome/free-solid-svg-icons"
+import { BsFillBookFill, BsFillMoonFill} from 'react-icons/bs';
 
 const Nav = ({libraryStatus, setLibraryStatus, 
     lightStatus, setLightStatus}) => {
@@ -18,11 +17,10 @@ const Nav = ({libraryStatus, setLibraryStatus,
         <nav>
             <h1>Lofi</h1>
             <button onClick={setLibraryHandler}>
-                Library 
-                <FontAwesomeIcon icon={faMusic}></FontAwesomeIcon>
+                Library <BsFillBookFill/>
             </button>
             <button onClick={setLightModeHandler}>
-                <FontAwesomeIcon icon={faMoon}></FontAwesomeIcon>
+                <BsFillMoonFill/>
             </button>
         </nav>
     )
