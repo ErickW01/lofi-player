@@ -6,7 +6,6 @@ const Nav = ({libraryStatus, setLibraryStatus,
 
     const setLibraryHandler = () => {
         setLibraryStatus(!libraryStatus)
-        console.log(libraryStatus)
     }
 
     const setLightModeHandler = () => {
